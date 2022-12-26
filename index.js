@@ -28,10 +28,18 @@ function horaActual(){
     }
 
     if(segundos < 10){
-        segundoReloj.innerHTML = "0" + segundos;
+        if(hora <= 12){
+            segundoReloj.innerHTML = "0" + segundos + " AM";
+        }else if(hora>12){
+            segundoReloj.innerHTML = "0" + segundos + " PM";
+        }
     }
     else{
-        segundoReloj.innerHTML = segundos;
+        if(hora <= 12){
+            segundoReloj.innerHTML = segundos + " AM";
+        }else if(hora>12){
+            segundoReloj.innerHTML = segundos + " PM";
+        }
     }
 
     /*milesimaReloj.innerHTML = milisegundos;*/
