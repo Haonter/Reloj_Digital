@@ -3,12 +3,15 @@ function horaActual(){
     let hora = fecha.getHours();
     let minutos = fecha.getMinutes();
     let segundos = fecha.getSeconds();
-    let milisegundos = fecha.getMilliseconds();
+    /*let milisegundos = fecha.getMilliseconds();*/
 
-    horaReloj = document.getElementById("Hora");
-    minutoReloj = document.getElementById("Minuto");
-    segundoReloj = document.getElementById("Segundo");
-    milesimaReloj = document.getElementById("Milisegundo");
+    let horaReloj = document.getElementById("Hora");
+    let minutoReloj = document.getElementById("Minuto");
+    let segundoReloj = document.getElementById("Segundo");
+    /*milesimaReloj = document.getElementById("Milisegundo");*/
+    
+    let fechaReloj = document.getElementById("Fecha");
+
 
     if(hora < 10){
         horaReloj.innerHTML = "0" + hora;
@@ -31,7 +34,9 @@ function horaActual(){
         segundoReloj.innerHTML = segundos;
     }
 
-    milesimaReloj.innerHTML = milisegundos;
+    /*milesimaReloj.innerHTML = milisegundos;*/
+
+    fechaReloj.innerHTML = fecha.toLocaleDateString();
 }
 
 setInterval(horaActual,1000);
