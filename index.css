@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(23, 23, 23);
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+}
+
+@media only screen and (max-width: 600px){
+    
+    #container{
+        width:50vw;
+        height: 15vh;
+    }
+
+    #Reloj{
+        color: greenyellow;
+        font-family: 'LED Digital 7', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #Indicador{
+        margin-top: -3vh;
+        color: greenyellow;
+        font-family: Arial;
+        font-size: 4.2vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #container{
+        width:3px;
+        height: 100px;
+    }
+
+    #Reloj{
+        color: greenyellow;
+        font-family: 'LED Digital 7', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #Indicador{
+        margin-top: -10vh;
+        color: greenyellow;
+        font-family: Arial;
+        font-size: 4.2vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    
+    #container{
+        width:3px;
+        height: 100px;
+    }
+
+    #Reloj{
+        color: greenyellow;
+        font-family: 'LED Digital 7', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #Indicador{
+        margin-top: -10vh;
+        color: greenyellow;
+        font-family: Arial;
+        font-size: 4.2vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    
+    #container{
+        width:3px;
+        height: 100px;
+    }
+
+    #Reloj{
+        color: greenyellow;
+        font-family: 'LED Digital 7', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #Indicador{
+        margin-top: -10vh;
+        color: greenyellow;
+        font-family: Arial;
+        font-size: 4.2vw;
+    }
+}
