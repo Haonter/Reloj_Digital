@@ -54,11 +54,11 @@ body h1{
     }
     
     .Indicador{
-        margin-top: 4vh;
-        margin-bottom: -3vh;
+        margin-top: 5vh;
+        margin-bottom: -5vh;
         color: chartreuse;
         font-family: Arial;
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
