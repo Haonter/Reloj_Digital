@@ -21,7 +21,7 @@ function horaActual(){
     else if(hora > 0 && hora < 10){
         horaReloj.innerHTML = "0" + hora;
     }
-    else if(hora == 11){
+    else if(hora >= 11 && hora <= 12){
         horaReloj.innerHTML = hora;
     }
     else if (hora > 12){
