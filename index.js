@@ -15,7 +15,10 @@ function horaActual(){
     let fechaReloj = document.getElementById("Fecha");
 
     /*Mostrar Hora: Formato 12h */
-    if(hora < 10){
+    if(hora == 0){
+        horaReloj.innerHTML = hora + 12;
+    }
+    else if(hora > 0 && hora < 10){
         horaReloj.innerHTML = "0" + hora;
     }
     else if (hora > 12){
