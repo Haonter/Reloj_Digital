@@ -37,16 +37,16 @@ function horaActual(){
     }
 
     /*Mostras Segundos y asignar Tiempo horario*/
-    if(segundos < 10 && hora <= 12){
+    if(segundos < 10 && hora < 13){
         segundoReloj.innerHTML = "0" + segundos + " AM";
     }
     else if(segundos < 10 && hora > 12){
         segundoReloj.innerHTML = "0" + segundos + " PM";
     }
-    else if(hora <= 12){
+    else if(hora <= 11){
         segundoReloj.innerHTML = segundos + " AM";
     }
-    else if(hora>12){
+    else if(hora >= 12){
         segundoReloj.innerHTML = segundos + " PM";
     }
 
